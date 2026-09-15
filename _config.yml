@@ -28,7 +28,7 @@ response_time: "two business days"
 # not fire when the captcha is turned off, and the Theme Store requires an
 # auto-responder.
 # ---------------------------------------------------------------------------
-formsubmit_id: "REPLACE_ME"
+formsubmit_id: "hamzabilalbaig@gmail.com"
 
 markdown: kramdown
 kramdown:
