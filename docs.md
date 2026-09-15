@@ -2,8 +2,8 @@
 layout: page
 title: Documentation
 permalink: /docs/
-lede: "Everything Nocturne can do, and how to set it up. Version 1.0.0."
-description: "Merchant documentation for the Nocturne Shopify theme — setup, presets, the size rail, product page, sections and FAQ."
+lede: "Everything Cathode can do, and how to set it up. Version 1.0.0."
+description: "Merchant documentation for the Cathode Shopify theme — setup, presets, the size rail, product page, sections and FAQ."
 ---
 
 
@@ -19,12 +19,12 @@ description: "Merchant documentation for the Nocturne Shopify theme — setup, p
 
 ### Install and pick a preset
 
-Nocturne ships three presets. All three are fully dark; they differ in color, type, corner
+Cathode ships three presets. All three are fully dark; they differ in color, type, corner
 treatment and glow intensity.
 
 | Preset | Character | Best for |
 |---|---|---|
-| **Nocturne** | Violet neon, tight uppercase type, small radii | Performance running, technical footwear |
+| **Cathode** | Violet neon, tight uppercase type, small radii | Performance running, technical footwear |
 | **Halide** | Cyan and green neon, soft rounded corners, wide page | Trail, outdoor, lifestyle |
 | **Filament** | Magenta and amber, condensed caps, square corners | Limited drops, streetwear, collaborations |
 
@@ -41,13 +41,13 @@ color, type and layout settings — it does not change your content.
    your products actually use, or the size rail will not appear. See section 3.
 4. **Shopify admin → Search and Discovery** — add filters. The collection page renders
    whatever you configure there.
-5. **Navigation** — build your main menu. Nocturne supports three levels of nesting.
+5. **Navigation** — build your main menu. Cathode supports three levels of nesting.
 
 ---
 
 ## 2. The command bar header
 
-Nocturne's header is one bar that swaps between three states rather than opening separate
+Cathode's header is one bar that swaps between three states rather than opening separate
 drawers.
 
 - **Navigation.** On desktop, top-level items with children open a panel beneath the bar.
@@ -74,7 +74,7 @@ entirely for visitors who have asked their device for reduced motion.
 
 ## 3. The size rail
 
-This is Nocturne's signature feature. On every product grid, each card shows the product's
+This is Cathode's signature feature. On every product grid, each card shows the product's
 sizes as a row of chips. In-stock sizes are clickable and add that exact variant to the
 cart. Sold-out sizes stay visible but struck through, so customers can see the full run.
 
@@ -154,7 +154,7 @@ Add a size guide two ways:
 
 ### Filtering
 
-Filters come from **Shopify admin → Search and Discovery**. Nocturne renders them as a
+Filters come from **Shopify admin → Search and Discovery**. Cathode renders them as a
 horizontal chip rail rather than a sidebar, with active filters shown as removable chips
 beneath. Filtering updates the grid in place without a page reload, and the browser's Back
 button returns to the previous filter set.
@@ -183,7 +183,7 @@ Included: quantity changes that refresh the whole cart, order notes, subscriptio
 plans, automatic discounts shown per line and on the order, accelerated checkout buttons,
 and an empty state.
 
-Nocturne does not include a discount code field in the cart. Discount codes belong at
+Cathode does not include a discount code field in the cart. Discount codes belong at
 checkout, and Theme Store rules do not permit cart-level discount code entry in a theme.
 
 ---
@@ -203,7 +203,7 @@ If you change scheme colors, keep body text at 4.5:1 against its background.
 
 ### Edge light
 
-**Theme settings → Edge light** controls Nocturne's neon:
+**Theme settings → Edge light** controls Cathode's neon:
 
 - **Glow strength** — how intense the neon is across the whole theme. Set it to 0 for a
   flat dark theme with no glow.
@@ -247,7 +247,7 @@ headings.
 
 ## 9. Accessibility and performance
 
-Nocturne is built to the Theme Store's accessibility bar:
+Cathode is built to the Theme Store's accessibility bar:
 
 - Every interactive element is keyboard operable, including multi-level menus
 - Visible focus rings everywhere, with keyboard focus order matching the page order
@@ -255,7 +255,7 @@ Nocturne is built to the Theme Store's accessibility bar:
 - Every image has alt text; every form input has a label
 - Animation is skipped for visitors who prefer reduced motion
 
-For performance, use images no larger than you need. Nocturne generates responsive sizes
+For performance, use images no larger than you need. Cathode generates responsive sizes
 automatically, but an 8MB source photo still costs you. 2400px on the long edge is plenty
 for a full-bleed hero.
 
@@ -273,7 +273,7 @@ Filters come from Shopify's Search and Discovery app settings, not from the them
 them there and they will appear.
 
 **Can I use a light color scheme?**
-Yes. Scheme 5 in every preset is a light scheme. Apply it to any section. Nocturne is
+Yes. Scheme 5 in every preset is a light scheme. Apply it to any section. Cathode is
 designed dark, so a fully light store will not look like the demo.
 
 **How do I change the announcement bar text?**

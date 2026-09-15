@@ -1,14 +1,14 @@
-# Nocturne — documentation and support site
-# Served by GitHub Pages at https://hamzabilalbaig.github.io/nocturne/
+# Cathode — documentation and support site
+# Served by GitHub Pages at https://hamzabilalbaig.github.io/cathode/
 
-title: Nocturne
+title: Cathode
 tagline: A dark, neon-lit Shopify theme for footwear.
-description: Documentation and support for the Nocturne Shopify theme.
+description: Documentation and support for the Cathode Shopify theme.
 
 # If you rename this repository, change baseurl to match, or every link breaks.
 # url + baseurl are what make absolute_url work for the form's _next redirect.
 url: "https://hamzabilalbaig.github.io"
-baseurl: "/nocturne"
+baseurl: "/cathode"
 
 theme_version: "1.0.0"
 response_time: "two business days"

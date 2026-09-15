@@ -4,7 +4,7 @@ permalink: /
 ---
 
 <section class="wrap hero">
-  <h1>Nocturne<br><span class="glow">documentation &amp; support</span></h1>
+  <h1>Cathode<br><span class="glow">documentation &amp; support</span></h1>
   <p>{{ site.tagline }} Size rails on every product card, a single command bar header, and a sticky buy panel that docks to a bottom bar on mobile.</p>
 </section>
 

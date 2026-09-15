@@ -1,12 +1,12 @@
-# Nocturne — documentation and support site
+# Cathode — documentation and support site
 
 Public site backing the two URLs required by the Shopify Theme Store, set in the theme's
 `config/settings_schema.json` under `theme_info`:
 
 | Setting | URL |
 |---|---|
-| `theme_documentation_url` | https://hamzabilalbaig.github.io/nocturne/docs/ |
-| `theme_support_url` | https://hamzabilalbaig.github.io/nocturne/support/ |
+| `theme_documentation_url` | https://hamzabilalbaig.github.io/cathode/docs/ |
+| `theme_support_url` | https://hamzabilalbaig.github.io/cathode/support/ |
 
 This repo is public because GitHub Pages requires it on the free plan. It contains **only
 the site** — the theme source stays private.
@@ -16,7 +16,7 @@ the site** — the theme source stays private.
 ```
 _config.yml        site settings, including the support form endpoint
 _layouts/          default.html (shell) and page.html (docs, with generated sidebar)
-assets/site.css    all styling; palette matches the theme's Nocturne preset
+assets/site.css    all styling; palette matches the theme's Cathode preset
 index.md           /          landing
 docs.md            /docs/     merchant documentation
 support.html       /support/  contact form and support policy
@@ -48,5 +48,5 @@ the theme's docs change, re-copy the body and keep the front matter block.
 
 ## Renaming this repo
 
-`baseurl` in `_config.yml` is `/nocturne`. If the repo is renamed, change it to match and
+`baseurl` in `_config.yml` is `/cathode`. If the repo is renamed, change it to match and
 update both URLs in the theme's `settings_schema.json`.
