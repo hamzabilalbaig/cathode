@@ -20,18 +20,24 @@ assets/site.css    all styling; palette matches the theme's Nocturne preset
 index.md           /          landing
 docs.md            /docs/     merchant documentation
 support.html       /support/  contact form and support policy
+thanks.html        /thanks/   where FormSubmit redirects after a submission
 ```
 
 ## Before submitting the theme
 
-1. **Connect the support form.** `form_endpoint` in `_config.yml` is `REPLACE_ME`, and a
-   warning banner shows on `/support/` until it is a real URL. Create the form at
-   [Tally](https://tally.so) or [Formspree](https://formspree.io), then:
-   - enable **file uploads** without requiring a login — Google Forms cannot do this, its
-     upload field forces a Google sign-in, which fails the Theme Store's "no login" rule
-   - enable the **auto-responder**, stating the two business day response time
-   - confirm the Subject field populates the notification email's subject line
-2. **Submit a test message** and check that both the notification and the auto-reply land.
+1. **Connect the support form.** It posts to [FormSubmit](https://formsubmit.co) — free,
+   no signup, 10MB of attachments per submission, and an auto-responder. `formsubmit_id`
+   in `_config.yml` is `REPLACE_ME`, and a warning banner shows on `/support/` until it
+   is set.
+   - Set it to your support email, push, and submit one test message from `/support/`.
+   - FormSubmit emails you an activation link and a masked token. Click the link, then
+     replace the email in `_config.yml` with the token so your address is not exposed
+     in the page HTML.
+   - **Do not add `_captcha=false`.** FormSubmit's auto-responder does not fire when the
+     captcha is disabled, and the Theme Store requires an auto-responder.
+2. **Test it end to end.** Submit a real message and confirm three things land: the
+   notification in your inbox with the chosen Subject as its subject line, the
+   auto-reply in the sender's inbox, and an attached screenshot.
 3. **Keep both URLs alive.** They ship inside every copy of the theme, so changing them
    later means pushing a theme update through review.
 
