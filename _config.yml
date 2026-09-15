@@ -1,0 +1,29 @@
+# Nocturne — documentation and support site
+# Served by GitHub Pages at https://hamzabilalbaig.github.io/nocturne/
+
+title: Nocturne
+tagline: A dark, neon-lit Shopify theme for footwear.
+description: Documentation and support for the Nocturne Shopify theme.
+
+# If you rename this repository, change baseurl to match, or every link breaks.
+baseurl: "/nocturne"
+
+theme_version: "1.0.0"
+response_time: "two business days"
+
+# ---------------------------------------------------------------------------
+# SETUP REQUIRED — the support form does nothing until this is a real endpoint.
+# Create a form at https://tally.so or https://formspree.io, then paste the
+# endpoint URL here. A visible warning banner shows on /support/ until you do.
+# ---------------------------------------------------------------------------
+form_endpoint: "REPLACE_ME"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

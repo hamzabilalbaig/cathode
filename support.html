@@ -1,0 +1,113 @@
+---
+layout: default
+title: Support
+permalink: /support/
+description: "Contact Nocturne theme support. Bugs, settings questions and help understanding a feature — we reply within two business days."
+---
+
+<div class="wrap page-head">
+  <h1>Support</h1>
+  <p class="lede">Tell us what is happening and we will reply within {{ site.response_time }}. No account needed.</p>
+</div>
+
+<div class="wrap" style="padding-bottom: 88px;">
+  <div class="prose" style="max-width: 720px;">
+
+    {% if site.form_endpoint == "REPLACE_ME" %}
+    <div class="banner">
+      <p><strong>Setup required — this form is not connected yet.</strong></p>
+      <p>Create a form at <a href="https://tally.so">Tally</a> or <a href="https://formspree.io">Formspree</a>,
+      turn on file uploads and the auto-responder, then paste its endpoint URL into
+      <code>form_endpoint</code> in <code>_config.yml</code>. This banner disappears once you do.</p>
+      <p>Shopify reviews this page before approving the theme, so connect it before you submit.</p>
+    </div>
+    {% endif %}
+
+    <form class="form" action="{{ site.form_endpoint }}" method="POST" enctype="multipart/form-data">
+
+      <div class="field">
+        <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Email address <span class="req" aria-hidden="true">*</span>
+          <span class="hint">Where our reply goes.</span>
+        </label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+
+      <div class="field">
+        <label for="store">Store URL <span class="req" aria-hidden="true">*</span></label>
+        <input type="text" id="store" name="store_url" placeholder="www.storename.myshopify.com" required>
+      </div>
+
+      <div class="field">
+        <label for="theme">Theme <span class="req" aria-hidden="true">*</span></label>
+        <select id="theme" name="theme" required>
+          <option value="Nocturne" selected>Nocturne</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="preset">Preset
+          <span class="hint">Optional, but it speeds up diagnosis.</span>
+        </label>
+        <select id="preset" name="preset">
+          <option value="">Not sure</option>
+          <option value="Nocturne">Nocturne</option>
+          <option value="Halide">Halide</option>
+          <option value="Filament">Filament</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="subject">Subject <span class="req" aria-hidden="true">*</span></label>
+        <select id="subject" name="_subject" required>
+          <option value="">Choose one</option>
+          <option value="Bug report">Bug report</option>
+          <option value="Question about a setting or section">Question about a setting or section</option>
+          <option value="Size rail is not showing">Size rail is not showing</option>
+          <option value="Installation or setup">Installation or setup</option>
+          <option value="Something else">Something else</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">Description of the problem <span class="req" aria-hidden="true">*</span>
+          <span class="hint">A link to the page where it happens helps us answer faster.</span>
+        </label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <div class="field">
+        <label for="upload">Screenshot or screen recording
+          <span class="hint">Optional. Images and video, up to 10MB.</span>
+        </label>
+        <input type="file" id="upload" name="upload" accept="image/*,video/*">
+      </div>
+
+      <button class="btn" type="submit">Send message</button>
+    </form>
+
+    <div class="policy">
+      <h2>What support covers</h2>
+      <ul>
+        <li><strong>Covered:</strong> bugs in the theme, questions about settings and sections, and help understanding how a feature works.</li>
+        <li><strong>Not covered:</strong> custom code, app integrations, design work, and changes to a theme whose code has been edited. We are happy to quote for these separately.</li>
+        <li><strong>Critical bugs</strong> are fixed immediately.</li>
+      </ul>
+
+      <h2>Before you write</h2>
+      <ul>
+        <li>Check the <a href="{{ '/docs/' | relative_url }}">documentation</a> — the <a href="{{ '/docs/#10-faq' | relative_url }}">FAQ</a> covers the most common setup questions.</li>
+        <li>If you have edited theme code, duplicate your theme before making further changes.</li>
+        <li>Tell us your store URL and which preset you are using.</li>
+      </ul>
+
+      <h2>Response time</h2>
+      <p>We reply within {{ site.response_time }}. You will get a confirmation email as soon as your message arrives.</p>
+    </div>
+
+  </div>
+</div>
